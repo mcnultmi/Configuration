@@ -83,6 +83,8 @@ export LANG=en_IE.UTF-8
 alias c="cd ~/College/Documents/Semester_4"
 alias p="cd ~/College/Projects"
 alias vmi="vim"
+alias vi="vim"
+
 #
 # cmatrix program
 cmatrix -au 3 -C cyan

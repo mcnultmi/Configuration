@@ -20,11 +20,15 @@ set laststatus=2                    " Always display the status line
 
 "============================= Tabs & Spaces ================================
 
-set softtabstop=4                   " The number of spaces a Tab character counts for when editing
-set tabstop=4                       " Number of spaces used to represent a Tab when reading a file
-set shiftwidth=4                    " Number of spaces to move using the '<<' and '>>' keys
-set expandtab                       " Insert space characters instead of Tabs
+"set softtabstop=4                   " The number of spaces a Tab character counts for when editing
+"set tabstop=4                       " Number of spaces used to represent a Tab when reading a file
+"set shiftwidth=4                    " Number of spaces to move using the '<<' and '>>' keys
+"set expandtab                       " Insert space characters instead of Tabs
 
+"autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType python setlocal shiftwidth=4 tabstop=4 softtabstop=4
+"autocmd FileType javascript setlocal shiftwidth=4 tabstop=4 softtabstop=4
+let g:html_indent_inctags = "html,body,head,tbody,script"
 
 "=========================== Folding Settings ===============================
 
@@ -40,10 +44,10 @@ let g:airline_theme='bubblegum'     " Vim Airline Theme
 set guifont=PT_Mono:h16:cANSI       " Set system font for GUI mode
 
 " Hide toolbars and scrollbars on startup
-set guioptions-=m                   " Remove menu bar
-set guioptions-=T                   " Remove toolbar
-set guioptions-=r                   " Remove right-hand scroll bar
-set guioptions-=L                   " Remove left-hand scroll bar
+"set guioptions-=m                   " Remove menu bar
+"set guioptions-=T                   " Remove toolbar
+"set guioptions-=r                   " Remove right-hand scroll bar
+"set guioptions-=L                   " Remove left-hand scroll bar
 
 " Start gVim in fullscreen under Windows
 " Use ~x on an English Windows version or ~n for French.
