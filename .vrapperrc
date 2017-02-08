@@ -1,0 +1,16 @@
+" ================== Configuration for Vrapper plugin for Eclipse ====================
+
+" Mapping for system output
+imap sysout System.out.println();<ESC>hi
+
+" Mapping for setup
+imap psvm public static void main (String [] args) {<CR><ESC>kddko
+
+imap psfi private static final int = <ESC> 
+imap psfd private double final double = <ESC> 
+
+" Epsilon for floating point comparison
+imap fdep final double EPSILON = 1E-14;<ESC>
+
+" System exit
+imap sysex System.exit(0);<ESC>
