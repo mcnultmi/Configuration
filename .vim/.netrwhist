@@ -1,10 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
-let g:netrw_dirhist_1='/home/michael/Projects/COMP47360/app'
-let g:netrw_dirhist_2='/home/michael/Projects/COMP47360/app/static'
-let g:netrw_dirhist_3='/home/michael/Projects/COMP47360/app/static/scripts'
-let g:netrw_dirhist_4='/home/michael/Projects/COMP47360/parser'
-let g:netrw_dirhist_5='/home/michael/Projects/Project_Cleanup/comp47360-research-practicum/parser'
-let g:netrw_dirhist_6='/home/michael/Projects/COMP47360/app'
-let g:netrw_dirhist_7='/home/michael/Projects/cleaning/data'
-let g:netrw_dirhist_8='/home/michael/Projects/cleaning/.git'
+let g:netrw_dirhist_cnt =0

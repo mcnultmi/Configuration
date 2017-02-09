@@ -1,0 +1,117 @@
+! Settings for urxvt
+
+! Cursor blink
+URxvt.cursorBlink: true
+
+! Font and Size (Requires iosevka AUR package)
+!URxvt.font: xft:iosevka:size=12
+
+
+! Font settings for Adobe Source Code Pro font
+URxvt.allow_bold: true
+URxvt.font: xft:SourceCodePro:regular:size=12:antialias=true
+URxvt.boldFont: xft:SourceCodePro:semibold:size=12:antialias=true
+URxvt.italicFont: xft:SourceCodePro:italic:size=12:antialias=true
+URxvt.boldItalicFont: xft:SourceCodePro:semibold:italic:size=12:antialias=true
+! Reduce spacing between letters by 1 pixel
+URxvt.letterSpace: -1
+
+! Font settings for Ubuntu Mono
+!URxvt.font: xft:UbuntuMono:regular:size=12:antialias=true
+!URxvt.boldFont: xft:UbuntuMono:semibold:size=12:antialias=true
+!URxvt.italicFont: xft:UbuntuMono:italic:size=12:antialias=true
+!URxvt.boldItalicFont: xft:UbuntuMono:semibold:italic:size=12:antialias=true
+!! Slightly increase letter spacing
+!URxvt.letterSpace: 1
+
+! Slightly increase letter spacing
+!URxvt.letterSpace: 1
+
+! Remove scrollbar
+URxvt.scrollBar: false
+
+!! Transparency settings
+!URxvt.transparent: true
+!URxvt.shading: 20
+
+!===== SOLARIZED SETTINGS =====
+
+! Required for solarized in terminal
+URxvt.intensityStyles: false
+
+!https://github.com/altercation/solarized/blob/master/xresources-colors-solarized/Xresources
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+#define custom		#222234
+
+! Dark
+*background:            custom
+
+! Original Background
+!*background:           S_base03
+*foreground:            S_base1
+
+! Original, paler font colour
+!*foreground:            S_base00
+*fading:                40
+!*fadeColor:             S_base03
+*fadeColor:             custom
+*cursorColor:           S_base1
+*pointerColorBackground:S_base01
+*pointerColorForeground:S_base1
+
+!! Light
+!*background:            S_base3
+!*foreground:            S_base00
+!*fading:                40
+!*fadeColor:             S_base3
+!*cursorColor:           S_base01
+!*pointerColorBackground:S_base1
+!*pointerColorForeground:S_base01
+
+!! black dark/light
+*color0:                S_base02
+*color8:                custom
+!*color8:                S_base03
+
+!! red dark/light
+*color1:                S_red
+*color9:                S_orange
+
+!! green dark/light
+*color2:                S_green
+*color10:               S_base01
+
+!! yellow dark/light
+*color3:                S_yellow
+*color11:               S_base00
+
+!! blue dark/light
+*color4:                S_blue
+*color12:               S_base0
+
+!! magenta dark/light
+*color5:                S_magenta
+*color13:               S_violet
+
+!! cyan dark/light
+*color6:                S_cyan
+*color14:               S_base1
+
+!! white dark/light
+*color7:                S_base2
+*color15:               S_base3
