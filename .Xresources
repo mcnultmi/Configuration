@@ -3,36 +3,30 @@
 ! Cursor blink
 URxvt.cursorBlink: true
 
-! Font and Size (Requires iosevka AUR package)
-!URxvt.font: xft:iosevka:size=12
+! Powerline-compatible font settings
+URxvt.font: xft:Roboto Mono for Powerline:size=12:antialias=true,xft:Roboto Mono:size=12:antialias=true
+URxvt.boldFont: xft:Roboto Mono for Powerline:bold:size=12:antialias=true,xft:Roboto Mono:size=12:antialias=true
+URxvt.italicFont: xft:Roboto Mono for Powerline:italic:size=12:antialias=true,xft:Roboto Mono:size=12:antialias=true
+URxvt.bolditalicFont: xft:Roboto Mono for Powerline:bold:italic:size=12:antialias=true,xft:Roboto Mono:size=12:antialias=true
 
+! Disable unicode insertion, and allow Ctrl+Shift
+URxvt*iso14755: False
 
 ! Font settings for Adobe Source Code Pro font
-URxvt.allow_bold: true
-URxvt.font: xft:SourceCodePro:regular:size=12:antialias=true
-URxvt.boldFont: xft:SourceCodePro:semibold:size=12:antialias=true
-URxvt.italicFont: xft:SourceCodePro:italic:size=12:antialias=true
-URxvt.boldItalicFont: xft:SourceCodePro:semibold:italic:size=12:antialias=true
-! Reduce spacing between letters by 1 pixel
-URxvt.letterSpace: -1
-
-! Font settings for Ubuntu Mono
-!URxvt.font: xft:UbuntuMono:regular:size=12:antialias=true
-!URxvt.boldFont: xft:UbuntuMono:semibold:size=12:antialias=true
-!URxvt.italicFont: xft:UbuntuMono:italic:size=12:antialias=true
-!URxvt.boldItalicFont: xft:UbuntuMono:semibold:italic:size=12:antialias=true
-!! Slightly increase letter spacing
-!URxvt.letterSpace: 1
-
-! Slightly increase letter spacing
-!URxvt.letterSpace: 1
+!URxvt.allow_bold: true
+!URxvt.font: xft:SourceCodePro:regular:size=12:antialias=true
+!URxvt.boldFont: xft:SourceCodePro:semibold:size=12:antialias=true
+!URxvt.italicFont: xft:SourceCodePro:italic:size=12:antialias=true
+!URxvt.boldItalicFont: xft:SourceCodePro:semibold:italic:size=12:antialias=true
+!! Reduce spacing between letters by 1 pixel
+!URxvt.letterSpace: -1
 
 ! Remove scrollbar
 URxvt.scrollBar: false
 
 !! Transparency settings
-!URxvt.transparent: true
-!URxvt.shading: 20
+URxvt.transparent: true
+URxvt.shading: 25
 
 !===== SOLARIZED SETTINGS =====
 

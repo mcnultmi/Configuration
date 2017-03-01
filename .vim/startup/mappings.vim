@@ -80,3 +80,18 @@ imap sysexit System.exit(0);<ESC>
 iabbr newhtml <!DOCTYPE html><CR><html lang="en"><CR><head><CR><meta charset="utf-8"><CR><title>xyz</title><CR></head><CR><body><CR></body><CR></html><ESC>?xyz<CR>Nciw
 
 "###### PYTHON ######
+
+
+"===================== Java in Eclim =================
+"
+" Import class under the cursor
+nnoremap <silent> <buffer> <leader>i :JavaImport<cr>
+
+" Search for javadocs of the element under the cursor with <leader>d
+nnoremap <silent> <buffer> <leader>d :JavaDocSearch -x decarations<cr>
+
+" Enter key in normal mode attempts corrections
+nnoremap <silent> <buffer> <cr> :JavaCorrect<cr>
+
+" Autoformat whole file using <leader>f
+nnoremap <silent> <buffer> <leader>f :%JavaFormat<cr>

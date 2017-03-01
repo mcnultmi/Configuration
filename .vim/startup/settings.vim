@@ -15,7 +15,7 @@ set incsearch                       " Complete searches while typing (before hit
 set hlsearch                        " Highlight search results throughout file
 set showcmd                         " Show the last command executed at the bottom
 set scrolloff=5                     " Show at least 5 lines above and below the cursor at all times
-set laststatus=2                    " Always display the status line
+set laststatus=2                    " Always display the status line (Required for powerline)
 
 
 "============================= Tabs & Spaces ================================
@@ -40,8 +40,10 @@ set foldmethod=manual               " How are folds created
 "=========================== Display Settings ===============================
 
 set t_Co=256                        " Allow for 256 color support
-let g:airline_theme='bubblegum'     " Vim Airline Theme
-set guifont=PT_Mono:h16:cANSI       " Set system font for GUI mode
+highlight Normal ctermbg=none        " Use terminal background
+highlight NonText ctermbg=none       " Use terminal background
+"let g:airline_theme='bubblegum'     " Vim Airline Theme
+"set guifont=PT_Mono:h16:cANSI       " Set system font for GUI mode
 
 " Hide toolbars and scrollbars on startup
 "set guioptions-=m                   " Remove menu bar
